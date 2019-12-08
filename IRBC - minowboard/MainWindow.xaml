@@ -1,0 +1,110 @@
+﻿<Window x:Class="Microsoft.Samples.Kinect.SkeletonBasics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:k="http://schemas.microsoft.com/kinect/2013"
+        Title="Skeleton Basics" Height="897" Width="1004" Loaded="WindowLoaded" Closing="WindowClosing">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="MediumGreyBrush" Color="#ff6e6e6e"/>
+        <SolidColorBrush x:Key="KinectPurpleBrush" Color="#ff52318f"/>
+        <SolidColorBrush x:Key="KinectBlueBrush" Color="#ff00BCF2"/>
+        <Style TargetType="{x:Type Image}">
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+        </Style>
+        <Style TargetType="{x:Type CheckBox}" x:Key="SquareCheckBox" >
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type CheckBox}">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal" Background="Transparent">
+                                <Grid x:Name="SquareCheckBoxChecked">
+                                    <Image x:Name="CheckedNormal" Source="Images\CheckedNormal.png" Stretch="None" HorizontalAlignment="Center"/>
+                                    <Image x:Name="CheckedHover" Source="Images\CheckedHover.png" Stretch="None" HorizontalAlignment="Center" Visibility="Collapsed"/>
+                                </Grid>
+                                <Grid x:Name="SquareCheckBoxUnchecked" Visibility="Collapsed">
+                                    <Image x:Name="UncheckedNormal" Source="Images\UncheckedNormal.png" Stretch="None" HorizontalAlignment="Center"/>
+                                    <Image x:Name="UncheckedHover" Source="Images\UncheckedHover.png" Stretch="None" HorizontalAlignment="Center" Visibility="Collapsed"/>
+                                </Grid>
+                                <TextBlock x:Name="SquareCheckBoxText" Text="{TemplateBinding Content}" TextAlignment="Left"  VerticalAlignment="Center" Foreground="{StaticResource KinectPurpleBrush}" FontSize="15"  Margin="9,0,0,0"/>
+                            </StackPanel>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="false">
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="SquareCheckBoxChecked"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="SquareCheckBoxUnchecked"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="CheckedNormal"/>
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="UncheckedNormal"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="CheckedHover"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="UncheckedHover"/>
+                                <Setter Property="Foreground" Value="{StaticResource KinectBlueBrush}" TargetName="SquareCheckBoxText"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid Name="layoutGrid" Margin="10 0 10 0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" Margin="0 0 0 20">
+            <Image DockPanel.Dock="Left" Source="Images\Logo.png" Stretch="Fill" Height="32" Width="81" Margin="0 10 0 5"/>
+            <TextBlock DockPanel.Dock="Right" Margin="0 0 -1 0" VerticalAlignment="Bottom" Foreground="{StaticResource MediumGreyBrush}" FontFamily="Segoe UI" FontSize="18" Width="261" Text="基于人体肢体语言的机械臂操控"></TextBlock>
+            <Image Grid.Column="1" Source="Images\Status.png" Stretch="None" HorizontalAlignment="Center" Margin="0 0 0 5"/>
+        </DockPanel>
+        <Viewbox Grid.Row="1" Stretch="Uniform" HorizontalAlignment="Center" Margin="26,0,566,405" Width="370"></Viewbox>
+        <CheckBox Grid.Row="2" Style="{StaticResource SquareCheckBox}" Content="Seated Mode" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0 10 10 10" Name="checkBoxSeatedMode" Checked="CheckBoxSeatedModeChanged" Unchecked="CheckBoxSeatedModeChanged"/>
+        <StatusBar Grid.Row="3" HorizontalAlignment="Stretch" Name="statusBar" VerticalAlignment="Bottom" Background="White" Foreground="{StaticResource MediumGreyBrush}">
+            <StatusBarItem Padding="0 0 0 10">
+                <TextBlock Name="statusBarText" Margin="-1 0 0 0">Click 'Seated' to change skeletal pipeline type!</TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+        <Image Name="Image" Margin="46,0,590,437" Grid.Row="1" />
+        <ScrollBar Height="217" Name="scrollBar1" Width="31" Margin="63,365,868,140" Grid.Row="1" Maximum="180" Value="90" SmallChange="1" Scroll="scrollBar1_Scroll" />
+        <ScrollBar Height="217" Margin="117,365,814,140" Name="scrollBar2" Width="31" Grid.Row="1" Maximum="180" Value="90" SmallChange="1" Scroll="scrollBar2_Scroll" />
+        <ScrollBar Height="217" Margin="174,365,757,140" Name="scrollBar3" Width="31" Grid.Row="1" Maximum="180" Value="90" SmallChange="1" Scroll="scrollBar3_Scroll" />
+        <ScrollBar Height="217" Margin="229,365,702,140" Name="scrollBar4" Width="31" Grid.Row="1" Value="90" Maximum="180" SmallChange="1" Scroll="scrollBar4_Scroll" />
+        <ScrollBar Height="217" Margin="285,365,646,140" Name="scrollBar5" Width="31" Grid.Row="1" Value="90" Maximum="180" SmallChange="1" Scroll="scrollBar5_Scroll" />
+        <ScrollBar Height="217" Margin="335,365,596,140" Name="scrollBar6" Width="31" Grid.Row="1" Value="45" Maximum="180" SmallChange="1" Scroll="scrollBar6_Scroll" />
+        <Label Content="腕" Height="28" Name="label1" Margin="63,612,858,82" Grid.Row="1" />
+        <Label Content="肘(反)" Height="28" Margin="110,612,804,82" Name="label2" Grid.Row="1" />
+        <Label Content="爪(反)" Height="28" Margin="174,612,747,82" Name="label3" Grid.Row="1" />
+        <Label Content="颈" Height="28" Margin="229,612,692,82" Name="label4" Grid.Row="1" />
+        <Label Content="肩" Height="28" Margin="285,612,636,82" Name="label5" Grid.Row="1" />
+        <Label Content="腰" Height="28" Margin="335,612,586,82" Name="label6" Grid.Row="1" />
+        <TextBox Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="63,331,0,0" Name="textBox1" VerticalAlignment="Top" Width="41" FontSize="16" />
+        <TextBox Height="28" HorizontalAlignment="Right" Margin="0,331,804,0" Name="textBox2" VerticalAlignment="Top" Width="41" Grid.Row="1" />
+        <TextBox Height="28" HorizontalAlignment="Left" Margin="174,331,0,0" Name="textBox3" VerticalAlignment="Top" Width="41" Grid.Row="1" />
+        <TextBox Height="28" HorizontalAlignment="Left" Margin="229,331,0,0" Name="textBox4" VerticalAlignment="Top" Width="41" Grid.Row="1" />
+        <TextBox Height="28" HorizontalAlignment="Left" Margin="285,331,0,0" Name="textBox5" VerticalAlignment="Top" Width="41" Grid.Row="1" />
+        <TextBox Height="28" HorizontalAlignment="Right" Margin="0,331,586,0" Name="textBox6" VerticalAlignment="Top" Width="41" Grid.Row="1" />
+        <Grid Grid.Row="1" Height="651" HorizontalAlignment="Left" Margin="427,11,0,0" Name="grid1" VerticalAlignment="Top" Width="519">
+            <k:KinectSensorChooserUI HorizontalAlignment="Center" VerticalAlignment="Top" Name="sensorChooserUi" />
+            <k:KinectUserViewer VerticalAlignment="Top" HorizontalAlignment="Center"  k:KinectRegion.KinectRegion="{Binding ElementName=kinectRegion}" Height="100" />
+            <k:KinectRegion Name="kinectRegion">
+                <Grid>        
+                  
+                    <k:KinectCircleButton  Content = "unGb" FontSize="16" FontStretch="Normal" Height="120" HorizontalAlignment="Left"  Margin="302,501,0,0" VerticalAlignment="Top" Width="181" Click="KinectCircleButton_Click_2" Name="grab" Foreground="#FF1A1515" />
+                    <k:KinectTileButton Height="95" HorizontalAlignment="Right" Label="Forward"       Click="Forward_Click"       Margin="0,132,205,0" VerticalAlignment="Top" Width="112" FontSize="14" Name="Forward" PreviewMouseLeftButtonDown="Forward_MouseDown" PreviewMouseLeftButtonUp="KinectTitleButton_MouseUp" />
+                    <k:KinectTileButton Height="95" HorizontalAlignment="Left" Label="Left"          Click="Left_Click"          Margin="64,253,0,0"  VerticalAlignment="Top" Width="112" FontSize="14" Name="Left" PreviewMouseLeftButtonDown="Left_MouseDown" PreviewMouseLeftButtonUp="KinectTitleButton_MouseUp" />
+                    <k:KinectTileButton Height="95" HorizontalAlignment="Left" Label="Right"         Click="Right_Click"         Margin="349,253,0,0" VerticalAlignment="Top" Width="112" FontSize="14" Name="Right" PreviewMouseLeftButtonDown="Right_MouseDown" PreviewMouseLeftButtonUp="KinectTitleButton_MouseUp" />
+                    <k:KinectTileButton Height="95" HorizontalAlignment="Left" Label="Backward"      Click="Backward_Click"      Margin="202,371,0,0" VerticalAlignment="Top" Width="112" FontSize="14" Name="Backward" PreviewMouseLeftButtonDown="Backward_MouseDown" PreviewMouseLeftButtonUp="KinectTitleButton_MouseUp" />
+                    <k:KinectTileButton Height="95" HorizontalAlignment="Left" Label="Stop"          Click="Stop_Click"          Margin="202,253,0,0"  VerticalAlignment="Top" Width="112" FontSize="14" Name="Stop" />
+                    <k:KinectTileButton Height="95" HorizontalAlignment="Left" Label="LeftForward"   Click="LeftForward_Click"   Margin="64,132,0,0" VerticalAlignment="Top" Width="112" FontSize="14" FontStretch="Normal" Name="LeftForward" PreviewMouseLeftButtonUp="KinectTitleButton_MouseUp" PreviewMouseLeftButtonDown="LeftForward_MouseDown" />
+                    <k:KinectTileButton Height="95" HorizontalAlignment="Left" Label="LeftBackward"  Click="LeftBackward_Click"  Margin="64,371,0,0" VerticalAlignment="Top" Width="112" FontSize="14" Name="LeftBackward" PreviewMouseLeftButtonDown="LeftBackward_MouseDown" PreviewMouseLeftButtonUp="KinectTitleButton_MouseUp" />
+                    <k:KinectTileButton Height="95" HorizontalAlignment="Left" Label="RightForward"  Click="RightForward_Click"  Margin="349,132,0,0" VerticalAlignment="Top" Width="112" FontSize="14" Name="RightForward" PreviewMouseLeftButtonDown="RightForward_MouseDown" PreviewMouseLeftButtonUp="KinectTitleButton_MouseUp" />
+                    <k:KinectTileButton Height="95" HorizontalAlignment="Left" Label="RightBackward" Click="RightBackward_Click" Margin="349,371,0,0" VerticalAlignment="Top" Width="112" FontSize="14" Name="RightBackward" PreviewMouseLeftButtonDown="RightBackward_MouseDown" PreviewMouseLeftButtonUp="KinectTitleButton_MouseUp" />
+                    <k:KinectCircleButton FontSize="64" FontStretch="Normal" Height="120" HorizontalAlignment="Left" Margin="53,501,0,0" VerticalAlignment="Top" Width="174" LabelBackground="#FFB7B5B5" Background="{x:Null}" Click="KinectCircleButton_Click" Name="switchbutton" />
+                    <Label Content="Label" Height="71" HorizontalAlignment="Left" Margin="338,43,0,0" Name="label7" VerticalAlignment="Top" Width="100" />
+                </Grid>
+            </k:KinectRegion>
+        </Grid>
+    </Grid>
+</Window>

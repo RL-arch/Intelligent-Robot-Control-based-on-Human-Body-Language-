@@ -1,0 +1,206 @@
+E:\KINNECT\Semples\SkeletonBasics-WPF\bin\Debug\SkeletonBasics-WPF.exe
+E:\KINNECT\Semples\SkeletonBasics-WPF\bin\Debug\SkeletonBasics-WPF.pdb
+E:\KINNECT\Semples\SkeletonBasics-WPF\obj\Debug\MainWindow.baml
+E:\KINNECT\Semples\SkeletonBasics-WPF\obj\Debug\MainWindow.g.cs
+E:\KINNECT\Semples\SkeletonBasics-WPF\obj\Debug\App.g.cs
+E:\KINNECT\Semples\SkeletonBasics-WPF\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+E:\KINNECT\Semples\SkeletonBasics-WPF\obj\Debug\SkeletonBasics-WPF.g.resources
+E:\KINNECT\Semples\SkeletonBasics-WPF\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+E:\KINNECT\Semples\SkeletonBasics-WPF\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+E:\KINNECT\Semples\SkeletonBasics-WPF\obj\Debug\SkeletonBasics-WPF.exe
+E:\KINNECT\Semples\SkeletonBasics-WPF\obj\Debug\SkeletonBasics-WPF.pdb
+C:\Users\Administrator\Desktop\SkeletonBasics-WPF\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\Administrator\Desktop\SkeletonBasics-WPF\obj\Debug\SkeletonBasics-WPF.pdb
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\obj\Debug\SkeletonBasics-WPF.exe
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\obj\Debug\SkeletonBasics-WPF.pdb
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\bin\Debug\SkeletonBasics-WPF.exe
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\bin\Debug\SkeletonBasics-WPF.pdb
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\bin\Debug\KinectTry3.exe
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\bin\Debug\KinectTry3.pdb
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\obj\Debug\MainWindow.baml
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\obj\Debug\MainWindow.g.cs
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\obj\Debug\App.g.cs
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\obj\Debug\SkeletonBasics-WPF.g.resources
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\obj\Debug\SkeletonBasics-WPF.exe
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\obj\Debug\SkeletonBasics-WPF.pdb
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\obj\Debug\MainWindow.baml
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\obj\Debug\MainWindow.g.cs
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\obj\Debug\App.g.cs
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\obj\Debug\SkeletonBasics-WPF.g.resources
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\bin\Debug\SkeletonBasics-WPF.exe
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\bin\Debug\SkeletonBasics-WPF.pdb
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\bin\Debug\KinectTry3.exe
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-13AM - 副本\bin\Debug\KinectTry3.pdb
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.exe
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.pdb
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\bin\Debug\SkeletonBasics-WPF.exe
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\bin\Debug\SkeletonBasics-WPF.pdb
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\bin\Debug\KinectTry3.exe
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\bin\Debug\KinectTry3.pdb
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\obj\Debug\MainWindow.baml
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\obj\Debug\MainWindow.g.cs
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\obj\Debug\App.g.cs
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.g.resources
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.exe
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.pdb
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\bin\Debug\SkeletonBasics-WPF.exe
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\bin\Debug\SkeletonBasics-WPF.pdb
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\bin\Debug\KinectTry3.exe
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\bin\Debug\KinectTry3.pdb
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\obj\Debug\MainWindow.baml
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\obj\Debug\MainWindow.g.cs
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\obj\Debug\App.g.cs
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.g.resources
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\SRTP项目程序\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\Administrator\Desktop\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.pdb
+C:\Users\Administrator\Desktop\KinectTry8-14PM\bin\Debug\SkeletonBasics-WPF.exe
+C:\Users\Administrator\Desktop\KinectTry8-14PM\bin\Debug\SkeletonBasics-WPF.pdb
+C:\Users\Administrator\Desktop\KinectTry8-14PM\bin\Debug\KinectTry3.pdb
+C:\Users\Administrator\Desktop\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\KinectTry8-14PM\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Desktop\KinectTry8-14PM\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\KinectTry8-14PM\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+C:\Users\Administrator\Desktop\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.g.resources
+C:\Users\Administrator\Desktop\KinectTry8-14PM\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+C:\Users\Administrator\Desktop\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.pdb
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\bin\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\bin\Debug\SkeletonBasics-WPF.pdb
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\bin\Debug\KinectTry3.pdb
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\obj\Debug\MainWindow.baml
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\obj\Debug\MainWindow.g.cs
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\obj\Debug\App.g.cs
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.g.resources
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM（最新）\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\SRTP\KinectTry8-14PM（最新）\obj\Debug\SkeletonBasics-WPF.pdb
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\bin\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\bin\Debug\SkeletonBasics-WPF.pdb
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\obj\Debug\MainWindow.baml
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\obj\Debug\MainWindow.g.cs
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\obj\Debug\App.g.cs
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\obj\Debug\SkeletonBasics-WPF.g.resources
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\obj\Debug\SkeletonBasics-WPF.pdb
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新）\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\obj\Debug\SkeletonBasics-WPF.pdb
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\bin\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\bin\Debug\SkeletonBasics-WPF.pdb
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\obj\Debug\MainWindow.baml
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\obj\Debug\MainWindow.g.cs
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\obj\Debug\App.g.cs
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\obj\Debug\SkeletonBasics-WPF.g.resources
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+C:\Users\kaixin\Desktop\KinectTry8-14PM（最新） - 副本\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\obj\Debug\SkeletonBasics-WPF.pdb
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\obj\Debug\MainWindow.baml
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\obj\Debug\MainWindow.g.cs
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\obj\Debug\App.g.cs
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\obj\Debug\SkeletonBasics-WPF.g.resources
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\bin\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\bin\Debug\SkeletonBasics-WPF.pdb
+C:\Users\kaixin\Desktop\KinectTry8-14PM（消除抖动）\bin\Debug\SkeletonBasics-WPF.exe.config
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\bin\Debug\SkeletonBasics-WPF.exe.config
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\obj\Debug\SkeletonBasics-WPF.exe
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\obj\Debug\SkeletonBasics-WPF.pdb
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\bin\Debug\SkeletonBasics-WPF.exe
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\bin\Debug\SkeletonBasics-WPF.pdb
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\obj\Debug\MainWindow.baml
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\obj\Debug\MainWindow.g.cs
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\obj\Debug\App.g.cs
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\obj\Debug\SkeletonBasics-WPF.g.resources
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+E:\软件3班\大三下\课外\SRTP\KinectTry8-14PM（消除抖动）完结版\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\bin\Debug\SkeletonBasics-WPF.exe.config
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\obj\Debug\SkeletonBasics-WPF.pdb
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\bin\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\bin\Debug\SkeletonBasics-WPF.pdb
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\obj\Debug\MainWindow.baml
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\obj\Debug\MainWindow.g.cs
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\obj\Debug\App.g.cs
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\obj\Debug\SkeletonBasics-WPF.g.resources
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中）\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中） - 副本\bin\Debug\SkeletonBasics-WPF.exe.config
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中） - 副本\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\kaixin\Desktop\KinectTry8-14PM（修改中） - 副本\obj\Debug\SkeletonBasics-WPF.pdb
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\bin\Debug\SkeletonBasics-WPF.exe.config
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\obj\Debug\SkeletonBasics-WPF.exe
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\obj\Debug\SkeletonBasics-WPF.pdb
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\bin\Debug\SkeletonBasics-WPF.exe
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\bin\Debug\SkeletonBasics-WPF.pdb
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\obj\Debug\MainWindow.baml
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\obj\Debug\MainWindow.g.cs
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\obj\Debug\App.g.cs
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\obj\Debug\SkeletonBasics-WPF.g.resources
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+E:\软件3班\大三下\课外\KinectTry8-14PM（修改中） - 副本\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\bin\Debug\SkeletonBasics-WPF.exe.config
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\obj\Debug\SkeletonBasics-WPF.pdb
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\bin\Debug\SkeletonBasics-WPF.exe
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\bin\Debug\SkeletonBasics-WPF.pdb
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\obj\Debug\SkeletonBasics-WPF.g.resources
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\bin\Debug\SkeletonBasics-WPF.exe.config
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\obj\Debug\SkeletonBasics-WPF.pdb
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\bin\Debug\SkeletonBasics-WPF.exe
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\bin\Debug\SkeletonBasics-WPF.pdb
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\obj\Debug\SkeletonBasics-WPF.g.resources
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1 - minowboard传送\bin\Debug\SkeletonBasics-WPF.exe.config
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1 - minowboard传送\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\Administrator\Desktop\基于人体肢体语言的机械臂操控1 - minowboard传送\obj\Debug\SkeletonBasics-WPF.pdb
+E:\展示\基于人体肢体语言的机械臂操控1 - minowboard传送\bin\Debug\SkeletonBasics-WPF.exe.config
+E:\展示\基于人体肢体语言的机械臂操控1 - minowboard传送\obj\Debug\SkeletonBasics-WPF.exe
+E:\展示\基于人体肢体语言的机械臂操控1 - minowboard传送\obj\Debug\SkeletonBasics-WPF.pdb
