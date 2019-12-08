@@ -36,85 +36,85 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
         long beginTime,endTime;
         int temp = 0;
 
-        /*********小车控制所需变量***************/
+        /*********Mobile Platform Variables***************/
        bool Send_status = true;
      //  TcpClient client = new TcpClient("192.168.1.1", 2001);
      //  TcpClient client;
-       NetworkStream stream;//通过网络流进行数据的交换
+       NetworkStream stream;//data transform 
      /*********************************************/
         TransformSmoothParameters smoothParameters;
-        //以下定义右手、右腕关节、右肘关节、右肩关节、左肩关节、左肘关节、左腕关节、左手、肩部中心、脊柱、头
+        //defined below joints of right hand、right wrist、rightelbow、right shoulder、left shoulder 、left elbow 、left wrist 、left hand、shoulder center 、spine、head
         Joint jpr, jprw, jpre, jprs,jpsc, jpspine,jpls,jple,jplw,head;
         float rightWristAngle, rightElbowAngle, rightshouderAngle, waistturnAngle, leftshouderAngle, rightheaddir, leftElbowAngle;
         float rightWristAngle2 = 90, rightElbowAngle2 = 90, rightshouderAngle2 = 90, waistturnAngle2 = 45, leftshouderAngle2 = 90, rightheaddir2 = 37, leftElbowAngle2=0;
     
         /// <summary>
-        /// Width of output drawing    绘制的宽度
+        /// Width of output drawing    
         /// </summary>
         private const float RenderWidth = 640.0f; 
 
         /// <summary>
-        /// Height of our output drawing     输出的绘制图像的高度
+        /// Height of our output drawing     
         /// </summary>
         private const float RenderHeight = 480.0f;
 
         /// <summary>
-        /// Thickness of drawn joint lines  关节点的线的厚度
+        /// Thickness of drawn joint lines  
         /// </summary>
         private const double JointThickness = 3;
 
         /// <summary>
-        /// Thickness of body center ellipse 身体中心椭圆形的厚度
+        /// Thickness of body center ellipse 
         /// </summary>
         private const double BodyCenterThickness = 10;
 
         /// <summary>
-        /// Thickness of clip edge rectangles  修剪边缘矩形的厚度
+        /// Thickness of clip edge rectangles  
         /// </summary>
         private const double ClipBoundsThickness = 10;
 
         /// <summary>
-        /// Brush used to draw skeleton center point  绘制骨骼中心点的画笔
+        /// Brush used to draw skeleton center point  
         /// </summary>
         private readonly Brush centerPointBrush = Brushes.Blue;
 
         /// <summary>
-        /// Brush used for drawing joints that are currently tracked  用于绘制当前追踪到的关节的画笔
+        /// Brush used for drawing joints that are currently tracked  
         /// </summary>
         private readonly Brush trackedJointBrush = new SolidColorBrush(Color.FromArgb(255, 68, 192, 68));
 
         /// <summary>
-        /// Brush used for drawing joints that are currently inferred  用于绘制当前推测的关节的画笔
+        /// Brush used for drawing joints that are currently inferred  
         /// </summary>        
         private readonly Brush inferredJointBrush = Brushes.Yellow;
 
         /// <summary>
-        /// Pen used for drawing bones that are currently tracked  用于绘制当前追踪到的骨头的笔
+        /// Pen used for drawing bones that are currently tracked  
         /// </summary>
         private readonly Pen trackedBonePen = new Pen(Brushes.Green, 6);
 
         /// <summary>
-        /// Pen used for drawing bones that are currently inferred  用于绘制当前推测出的骨头的笔
+        /// Pen used for drawing bones that are currently inferred  
         /// </summary>        
         private readonly Pen inferredBonePen = new Pen(Brushes.Gray, 1);
 
         /// <summary>
-        /// Active Kinect sensor  可用的kinect传感器
+        /// Active Kinect sensor  
         /// </summary>
         private KinectSensor sensor;
 
         /// <summary>
-        /// Drawing group for skeleton rendering output  骨骼着色输出的绘制组
+        /// Drawing group for skeleton rendering output  
         /// </summary>
         private DrawingGroup drawingGroup;  
 
         /// <summary>
-        /// Drawing image that we will display 要显示的绘制图像
+        /// Drawing image that we will display 
         /// </summary>
         private DrawingImage imageSource;
 
         /// <summary>
-        /// Initializes a new instance of the MainWindow class. 初始化
+        /// Initializes a new instance of the MainWindow class. 
         /// </summary>
         public MainWindow()
         {
@@ -231,7 +231,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
         }
 
         /// <summary>
-        /// Execute startup tasks  执行启动工作
+        /// Execute startup tasks  
         /// </summary>
         /// <param name="sender">object sending the event</param>
         /// <param name="e">event arguments</param>
@@ -248,21 +248,24 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
            
             beginTime = DateTime.Now.Ticks; ;
 
-          //  stream = client.GetStream();//通过网络流进行数据的交换
+          //  stream = client.GetStream();//
 
-            smoothParameters.Smoothing = 0.5f; // 设置处理骨骼数据帧时的平滑量，接受一个0-1的浮点值，值越大，平滑的越多。0表示不进行平滑。
+            //Sets the amount of smoothing when processing bone data frames. 
+            //It accepts a floating point value of 0-1. 
+            //The larger the value, the more smooth it is. 0 means not smooth 
+            smoothParameters.Smoothing = 0.5f; 
 
-            // Create the drawing group we'll use for drawing 创建一个绘制组
+            // Create the drawing group we'll use for drawing 
             this.drawingGroup = new DrawingGroup();
 
-            // Create an image source that we can use in our image control 创建一个在图像控制中我们可以使用的图像源
+            // Create an image source that we can use in our image control 
             this.imageSource = new DrawingImage(this.drawingGroup);
 
-            // Display the drawing using our image control 显示图像
+            // Display the drawing using our image control 
             Image.Source = this.imageSource;
 
-            // 浏览所有传感器并打开第一个连接的传感器
-            //这需要在程序启动的当前时刻kinect是连接上的
+            // Browse all sensors and open the first connected sensor
+            //This needs to be connected at the current moment when the program starts
             //
             foreach (var potentialSensor in KinectSensor.KinectSensors)
             {
@@ -275,13 +278,13 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
 
             if (null != this.sensor)
             {
-                // Turn on the skeleton stream to receive skeleton frames 打开骨架流去接受骨骼框架
+                // Turn on the skeleton stream to receive skeleton frames 
                 this.sensor.SkeletonStream.Enable(smoothParameters);
 
-                // Add an event handler to be called whenever there is new color frame data增加一个待调用的事件处理当有新的颜色框架数据
+                // Add an event handler to be called whenever there is new color frame data
                 this.sensor.SkeletonFrameReady += this.SensorSkeletonFrameReady;
 
-                // Start the sensor!  打开传感器
+                // Start the sensor!  
                 try
                 {
                     this.sensor.Start();
@@ -299,7 +302,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
         }
        
         /// <summary>
-        /// Execute shutdown tasks  关闭传感器
+        /// Execute shutdown tasks  
         /// </summary>
         /// <param name="sender">object sending the event</param>
         /// <param name="e">event arguments</param>
@@ -313,7 +316,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
         }
 
         /// <summary>
-        /// Event handler for Kinect sensor's SkeletonFrameReady event   Kinect传感器的骨骼框架事件处理
+        /// Event handler for Kinect sensor's SkeletonFrameReady event  
         /// </summary>
         /// <param name="sender">object sending the event</param>
         /// <param name="e">event arguments</param>
@@ -332,7 +335,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
 
             using (DrawingContext dc = this.drawingGroup.Open())
             {
-                // Draw a transparent background to set the render size 绘制一个透明的背景去设定着色的大小
+                // Draw a transparent background to set the render size 
                 dc.DrawRectangle(Brushes.Black, null, new Rect(0.0, 0.0, RenderWidth, RenderHeight));
 
                 if (skeletons.Length != 0)
@@ -374,7 +377,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
                                 leftshouderAngle = CalculateAngleForShouder(jple, jpls, jpsc, jpspine);
                                 rightheaddir = CalculateAngleForShouder(head, jpsc, jprs);
                                 label7.Content = rightheaddir;
-                                if (switchMode) //模式切换 || rightheaddir < 50
+                                if (switchMode) //swith mode || rightheaddir < 50
                                 {
                                 //rightWristAngle = AmplitudeLimiterFilter(rightWristAngle, rightWristAngle2);
                                 //rightElbowAngle = AmplitudeLimiterFilter(rightElbowAngle, rightElbowAngle2);
@@ -385,9 +388,9 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
                                 //while (DateTime.Now.Ticks - endTime2 < 2000) ;
 
                                 endTime = DateTime.Now.Ticks;
-                                if (endTime - beginTime > 2000)  //延时2S
+                                if (endTime - beginTime > 2000)  //delay 2s
                                 {
-                                    if (temp == 0)  //取前一次值
+                                    if (temp == 0)  //value last time
                                     {
 
                                         rightWristAngle2 = rightWristAngle;
@@ -415,7 +418,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
                                         //waistturnAngle = (waistturnAngle + waistturnAngle2) / 2;
                                         //leftshouderAngle = (leftshouderAngle + leftshouderAngle2) / 2;
 
-                                        textBox1.Text = Convert.ToString(leftshouderAngle);//右手腕rightWristAngle用左手臂代替
+                                        textBox1.Text = Convert.ToString(leftshouderAngle);//rightWristAngle replaced by left arm
 
                                         textBox2.Text = Convert.ToString(rightElbowAngle);
 
@@ -426,7 +429,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
                                         //textBox3.Text = Convert.ToString(leftshouderAngle);
                                         try
                                         {
-                                            scrollBar1.Value = leftshouderAngle;//右手腕rightWristAngle用左手臂代替
+                                            scrollBar1.Value = leftshouderAngle;//rightWristAngle replaced by left arm
                                             byte[] data1 = { 0xFF, 0X01, 0X01, Convert.ToByte(scrollBar1.Value), 0XFF };
                                             //stream.Write(data1, 0, data1.Length);
 
@@ -488,7 +491,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
                         }
                     }
                 }
-                // prevent drawing outside of our render area  阻止绘制到着色区外面
+                // prevent drawing outside of our render area  
                 this.drawingGroup.ClipGeometry = new RectangleGeometry(new Rect(0.0, 0.0, RenderWidth, RenderHeight));
             }
         }
@@ -509,7 +512,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
         }
        
         /// <summary>
-        /// 计算腕关节的角度
+        /// do calculation 
         /// </summary>
         /// <param name="a"></param>
         /// <param name="b"></param>
@@ -661,7 +664,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
 
         }
      
-        private void getAllAngles()   //得到所有关节点的角度
+        private void getAllAngles()   //get all joints angle data
         {
             rightWristAngle = CalculateWristAngleForWrist(jpr, jprw, jpre);
             rightElbowAngle = CalculateAngleForElbow(jprw, jpre, jprs);
@@ -671,7 +674,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
         }
       
         /// <summary>
-        /// Draws a skeleton's bones and joints 绘制骨架的骨头和关节
+        /// Draws a skeleton's bones and joints 
         /// </summary>
         /// <param name="skeleton">skeleton to draw</param>
         /// <param name="drawingContext">drawing context to draw to</param>
@@ -728,7 +731,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
         }
 
         /// <summary>
-        /// Maps a SkeletonPoint to lie within our render space and converts to Point 匹配一个骨骼点去展现在我们的渲染区并转换成一个点
+        /// Maps a SkeletonPoint to lie within our render space and converts to Point 
         /// </summary>
         /// <param name="skelpoint">point to map</param>
         /// <returns>mapped point</returns>
@@ -736,13 +739,13 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
         {
             // Convert point to depth space.  
             // We are not using depth directly, but we do want the points in our 640x480 output resolution.
-            //转换点到深度空间
+            //----transform points to depth-----------
             DepthImagePoint depthPoint = this.sensor.CoordinateMapper.MapSkeletonPointToDepthPoint(skelpoint, DepthImageFormat.Resolution640x480Fps30);
             return new Point(depthPoint.X, depthPoint.Y);
         }
 
         /// <summary>
-        /// Draws a bone line between two joints  两骨骼点之间画线
+        /// Draws a bone line between two joints  
         /// </summary>
         /// <param name="skeleton">skeleton to draw bones from</param>
         /// <param name="drawingContext">drawing context to draw to</param>
@@ -753,21 +756,21 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
             Joint joint0 = skeleton.Joints[jointType0];
             Joint joint1 = skeleton.Joints[jointType1];
 
-            // If we can't find either of these joints, exit 未追踪到任一个则退出
+            // If we can't find either of these joints, exit 
             if (joint0.TrackingState == JointTrackingState.NotTracked ||
                 joint1.TrackingState == JointTrackingState.NotTracked)
             {
                 return;
             }
 
-            // Don't draw if both points are inferred 如果两个点都是推测出的则不绘制
+            // Don't draw if both points are inferred 
             if (joint0.TrackingState == JointTrackingState.Inferred &&
                 joint1.TrackingState == JointTrackingState.Inferred)
             {
                 return;
             }
 
-            // We assume all drawn bones are inferred unless BOTH joints are tracked 我们假定所有骨头都是推测出来的除非两个关节点都被追踪到
+            // We assume all drawn bones are inferred unless BOTH joints are tracked 
             Pen drawPen = this.inferredBonePen;
             if (joint0.TrackingState == JointTrackingState.Tracked && joint1.TrackingState == JointTrackingState.Tracked)
             {
@@ -778,7 +781,7 @@ namespace Microsoft.Samples.Kinect.SkeletonBasics
         }
 
         /// <summary>
-        /// Handles the checking or unchecking of the seated mode combo box 处理站模式和坐模式
+        /// Handles the checking or unchecking of the seated mode combo box 
         /// </summary>
         /// <param name="sender">object sending the event</param>
         /// <param name="e">event arguments</param>
